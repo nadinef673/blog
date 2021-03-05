@@ -1,0 +1,259 @@
+html,
+body {
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-family: sans-serif;
+  font-size: 1.3rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+span {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  margin: 0 5vw;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.nav {
+  background: white;
+  padding: 0 2rem;
+  height: 0rem;
+  min-height: 10vh;
+  overflow: hidden;
+  transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu {
+  justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+  position: absolute;
+  top: 0%;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+  font-size: 1.4rem;
+  color: gray;
+}
+
+.collapse {
+  height: 30rem;
+}
+
+.nav .nav-items {
+  display: flex;
+  margin: 0;
+}
+
+.nav .nav-items .nav-link {
+  padding: 1.6rem 1rem;
+  font-size: 1.1rem;
+  position: relative;
+  color: black;
+}
+
+.nav .nav-items .nav-link:hover {
+  background-color: #ff0157;
+}
+
+.nav .nav-items .nav-link:hover a {
+  color: white;
+}
+
+.nav .nav-brand a {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  text-decoration: none;
+  display: block;
+}
+
+.nav .social {
+  padding: 1.4rem 0;
+}
+
+.nav .social i {
+  padding: 0.2rem;
+}
+
+.nav .social i:hover {
+  color: whitesmoke;
+}
+
+main .title {
+  background: url(../images/photo-1514477917009-389c76a86b68.jpeg);
+  background-size: cover;
+  transition: background-image 0.2s linear;
+  animation: changeBG 30s ease-in-out infinite;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes changeBG {
+  0% {
+    background-image: url("../images/photo-1529697216570-f48ef8f6b2dd.jpeg");
+  }
+  20% {
+    background-image: url("../images/pinknightsky.jpg");
+  }
+  40% {
+    background-image: url("../images/pinknightsky1.jpg");
+  }
+  60% {
+    background-image: url("../images/pinknightsky2.jpg");
+  }
+  80% {
+    background-image: url("../images/pinknightsky3.jpg");
+  }
+  100% {
+    background-image: url("../images/pinknightsky4.jpg");
+  }
+}
+
+main .title .title-background {
+  padding-top: 10rem;
+  text-align: center;
+  color: #ff0157;
+}
+
+main .title h1,
+h3 {
+  margin: 3rem;
+}
+
+main .title .btn {
+  margin: 1.8rem;
+  background: blue;
+}
+
+main .title .btn:hover {
+  background: transparent;
+  border: 1px solid white;
+  color: black;
+}
+
+main .blog {
+  background: url(../images/pink&whitebg.jpg);
+  background-position: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+main .blog .blog-post {
+  padding-top: 6rem;
+}
+
+main .blog-post .blog-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 3rem 2rem;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+main .blog-content .blog-title {
+  padding: 2rem 0;
+}
+
+main .blog-content .btn-blog {
+  padding: 0.7rem 2rem;
+  background: skyblue;
+  margin: 0.5rem;
+}
+
+main .blog-content span {
+  display: block;
+}
+
+section .container .owl-nav {
+  position: absolute;
+  top: 0%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-prev .owl-nav-next {
+  color: gray;
+  background: transparent;
+  font-size: 2rem;
+}
+
+main .information {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+main .post-info {
+  margin-bottom: 5rem;
+  width: 100%;
+}
+
+main /*.side-posts*/ .post-info > .post-image,
+.post-title {
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+main .post-info .post-title a {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .nav .nav-menu,
+  .nav .nav-items {
+    flex-direction: column;
+  }
+
+  .nav .toggle-collapse {
+    display: initial;
+  }
+}
