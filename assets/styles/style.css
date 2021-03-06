@@ -247,6 +247,24 @@ main .post-info .post-title a {
   font-size: 1.5rem;
 }
 
+.information > .sidebar .category-list {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.information > .sidebar .category-list .list-items {
+  background: turquoise;
+  padding: 0.4rem 1rem;
+  margin: 0.8rem 0;
+  border-radius: 3rem;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.information > .sidebar .category-list .list-items a {
+  color: black;
+}
+
 @media only screen and (max-width: 750px) {
   .nav .nav-menu,
   .nav .nav-items {
