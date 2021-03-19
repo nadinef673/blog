@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/blog.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Lobster&family=Redressed&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Blog</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-menu flex-row">
+        <div class="nav-brand">
+          <a href="" class="logo">Twenty <span>21.</span></a>
+        </div>
+        <div class="toggle-collapse">
+          <div class="toggle-icons">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <div>
+          <ul class="nav-items">
+            <li class="nav-link" color="black">
+              <a href="index.html">HOME</a>
+            </li>
+            <li class="nav-link">
+              <a href="index.html">ABOUT</a>
+            </li>
+            <li class="nav-link">
+              <a href="index.html">CATEGORY</a>
+            </li>
+            <li class="nav-link">
+              <a href="index.html">CONTACT US</a>
+            </li>
+            <li class="nav-link">
+              <a href="blog.html" target="*_black">BLOG</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="title" id="home">
+        <div class="title-background" data-aos="fade-up" data-aos-delay="100">
+          <h1>empowering women:</h1>
+          <h3>
+            "I wish that more women realized that helping another woman win,
+            cheering her on, praying for her, or sharing resource with her, does
+            NOT take away from the blessings coming to them. In fact, the more
+            you give, the more you receive. Empowering women does not come from
+            selfishness but rather selflessness.
+          </h3>
+          <hr />
+          <h4>- Selene Kinder</h4>
+        </div>
+      </section>
+
+      <section class="container" id="about">
+        <div class="information">
+          <div class="posts">
+            <div class="post-content">
+              <div class="post-image" data-aos="fade-up" data-aos-delay="200">
+                <div>
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/6Rfn94k717U"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+
+                  <div class="post"></div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="post-content" data-aos="fade-up" data-aos-delay="200">
+              <div class="post-image" data-aos="fade-up" data-aos-delay="200">
+                <div>
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/COQqd8u4KS0"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="post-content" data-aos="fade-up" data-aos-delay="200">
+              <div class="post-image" data-aos="fade-up" data-aos-delay="200">
+                <div>
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/oWIusnIHCSE"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            <hr />
+          </div>
+          <aside class="sidebar" id="category">
+            <div
+              class="popular-post"
+              data-aos="fade-left"
+              data-aos-delay="200"
+              id="archive"
+            >
+              <div class="post-info">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/TQEP2iBubgY"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <hr />
+                <div class="post-info">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/4rGxBxyKHf0"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <hr />
+                  <div class="post-info">
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/wYIghuFEo5Q"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                    <hr />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <section class="comments">
+        <div class="form_div">
+          <form
+            id="creating_comment"
+            class="form2"
+            onsubmit="event.preventDefault(); createCom()"
+          >
+            <label for="item">Full Name:</label><br />
+            <input
+              type="text"
+              class="input-element"
+              name="fname"
+              id="fname"
+              placeholder="Enter Full Name"
+              required
+            /><br /><br />
+            <label for="item">Email Address:</label><br />
+            <input
+              type="text"
+              class="input-element"
+              name="email"
+              id="email"
+              placeholder="Enter E-mail Address"
+              required
+            /><br /><br />
+            <label for="item">Write Your Comment:</label><br />
+            <input
+              type="text"
+              class="input-element"
+              name="comment"
+              id="comment"
+              placeholder="Enter Comment"
+              required
+            /><br /><br />
+            <button id="reg_btn" type="submit" class="sub-btn">
+              Submit Comment
+            </button>
+          </form>
+        </div>
+
+        <table class="container1" id="comment_table">
+          <tr>
+            <th>Name</th>
+            <th>Comment</th>
+          </tr>
+
+          <!-- <tr>
+              <td>${comment.name}</td>
+              <td>${comment.comment}</td>
+          </tr> -->
+        </table>
+      </section>
+    </main>
+  </body>
+  <script src="./index.js"></script>
+  <script src="./scripts/main.js"></script>
+</html>

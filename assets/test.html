@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form_div">
+      <form
+        id="creating_comment"
+        class="form2"
+        onsubmit="event.preventDefault(); createCom()"
+      >
+        <label for="item">Full Name:</label><br />
+        <input
+          type="text"
+          name="fname"
+          id="fname"
+          placeholder="Enter Full Name"
+          required
+        /><br /><br />
+        <label for="item">Email Address:</label><br />
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Create Password"
+          required
+        /><br /><br />
+        <label for="item">Write Your Comment:</label><br />
+        <input
+          type="text"
+          name="comment"
+          id="comment"
+          placeholder="Enter Email Address"
+          required
+        /><br /><br />
+        <button id="reg_btn" type="submit">Register</button>
+      </form>
+    </div>
+
+    <table class="container1" id="comment_table">
+      <tr>
+        <th>Name</th>
+        <th>Comment</th>
+      </tr>
+
+      <!-- <tr>
+          <td>${comment.name}</td>
+          <td>${comment.comment}</td>
+      </tr> -->
+    </table>
+    <script src="test.js"></script>
+  </body>
+</html>

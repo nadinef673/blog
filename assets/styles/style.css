@@ -3,6 +3,7 @@ body {
   margin: 0%;
   box-sizing: border-box;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -20,13 +21,17 @@ ul {
 }
 
 h1 {
-  font-family: sans-serif;
-  font-size: 2.5rem;
+  font-family: "Fredericka the Great", cursive;
+  font-size: 5rem;
 }
 
 h3 {
-  font-family: sans-serif;
-  font-size: 1.3rem;
+  font-family: "Lobster", cursive;
+  font-size: 3rem;
+}
+
+.pop-title {
+  font-size: 3rem;
 }
 
 .btn {
@@ -47,20 +52,32 @@ span {
 }
 
 .text-gray {
-  color: gray;
+  color: black;
+}
+
+.logo .span {
+  color: #ff0157;
 }
 
 .nav {
-  background: white;
+  background: rgba(255, 192, 203, 0.6);
   padding: 0 2rem;
   height: 0rem;
   min-height: 10vh;
   overflow: hidden;
   transition: height 1s ease-in-out;
+  position: fixed;
+  width: 98%;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav .nav-menu {
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav .toggle-collapse {
@@ -89,6 +106,20 @@ span {
 .nav .nav-items {
   display: flex;
   margin: 0;
+  font-family: "Redressed", cursive;
+  font-weight: bold;
+}
+
+.nav .nav-items .nav-link {
+  padding: 1.6rem 1rem;
+  font-size: 1.1rem;
+  position: relative;
+  color: black;
+}
+
+.nav .nav-items .nav-link:hover {
+  display: flex;
+  margin: 0;
 }
 
 .nav .nav-items .nav-link {
@@ -100,6 +131,12 @@ span {
 
 .nav .nav-items .nav-link:hover {
   background-color: #ff0157;
+  transition: 0.5s ease-in-out;
+}
+
+.nav .nav-items .nav-link:hover a {
+  color: white;
+  background-color: #ff0157;
 }
 
 .nav .nav-items .nav-link:hover a {
@@ -107,10 +144,18 @@ span {
 }
 
 .nav .nav-brand a {
-  font-size: 1.6rem;
+  font-size: 3rem;
   padding: 1rem 0;
   text-decoration: none;
   display: block;
+  color: black;
+  font-family: "Lobster", cursive;
+}
+
+.nav .nav-brand span {
+  font-family: "Lobster", cursive;
+  color: #ff0157;
+  font-size: 3rem;
 }
 
 .nav .social {
@@ -127,6 +172,9 @@ span {
 
 main .title {
   background: url(../images/photo-1514477917009-389c76a86b68.jpeg);
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
   background-size: cover;
   transition: background-image 0.2s linear;
   animation: changeBG 30s ease-in-out infinite;
@@ -137,22 +185,22 @@ main .title {
 
 @keyframes changeBG {
   0% {
-    background-image: url("../images/photo-1529697216570-f48ef8f6b2dd.jpeg");
+    background-image: url("../images/rosegold.jpg");
   }
   20% {
-    background-image: url("../images/pinknightsky.jpg");
+    background-image: url("../images/rosepink.jpg");
   }
   40% {
-    background-image: url("../images/pinknightsky1.jpg");
+    background-image: url("../images/pinky.jpg");
   }
   60% {
-    background-image: url("../images/pinknightsky2.jpg");
+    background-image: url("../images/pinky2.jpg");
   }
   80% {
-    background-image: url("../images/pinknightsky3.jpg");
+    background-image: url("../images/pinky3.jpg");
   }
   100% {
-    background-image: url("../images/pinknightsky4.jpg");
+    background-image: url("../images/pinky4.jpg");
   }
 }
 
@@ -169,7 +217,9 @@ h3 {
 
 main .title .btn {
   margin: 1.8rem;
-  background: blue;
+  background: transparent;
+  border: 1px solid white;
+  color: #ff0157;
 }
 
 main .title .btn:hover {
@@ -179,12 +229,21 @@ main .title .btn:hover {
 }
 
 main .blog {
-  background: url(../images/pink&whitebg.jpg);
+  background: url(../images/istockphoto-1049942404-612x612.jpg);
   background-position: cover;
+  position: relative;
   height: 100vh;
   width: 100%;
+  background-size: cover;
 }
 
+.owl-carousel .owl-item img {
+  height: 300px;
+  object-fit: cover;
+}
+.owl-carousel.owl-drag .owl-item {
+  height: 100%;
+}
 main .blog .blog-post {
   padding-top: 6rem;
 }
@@ -204,7 +263,7 @@ main .blog-content .blog-title {
 
 main .blog-content .btn-blog {
   padding: 0.7rem 2rem;
-  background: skyblue;
+  background: pink;
   margin: 0.5rem;
 }
 
@@ -229,8 +288,35 @@ section .container .owl-nav {
 main .information {
   display: grid;
   grid-template-columns: 70% 30%;
+  padding: 5% 0;
 }
 
+.posts {
+  padding: 0 4%;
+}
+img {
+  width: 100%;
+  border-radius: 64% 36% 41% 59% / 67% 30% 70% 33%;
+  transition: border-radius 0.3s;
+}
+
+img:hover {
+  border-radius: 18% 82% 78% 22% / 33% 61% 39% 67%;
+  transition: 0.5s ease-in-out;
+  border: 1px pink;
+}
+
+input {
+  width: 100%;
+  padding: 2%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  background: #bebebebe;
+  margin: 10px;
+  border-radius: 10px;
+  justify-content: center;
+}
 main .post-info {
   margin-bottom: 5rem;
   width: 100%;
@@ -265,6 +351,128 @@ main .post-info .post-title a {
   color: black;
 }
 
+.information .sidebar .popular-post .post-info {
+  padding: 1rem 0;
+}
+
+.information .sidebar .popular-post h2 {
+  padding-top: 8rem;
+}
+
+.information .sidebar .contact-form {
+  padding-top: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.information .sidebar .contact-form .form-element {
+  padding: 0.5rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.information .sidebar .contact-form .input-element {
+  width: 80%;
+  height: 1.9rem;
+  padding: 0.3rem 0.5rem;
+  font-size: 1rem;
+}
+
+.information .sidebar .contact-form .sub-btn {
+  border-radius: 0;
+  padding: 0.8rem 32%;
+  margin: 1rem 0;
+  background: grey;
+}
+
+footer.footer {
+  height: 100%;
+  background: pink;
+  position: relative;
+}
+
+footer.footer .container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+footer.footer.container > div {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 3rem 0.9rem;
+}
+
+footer.footer .container .about-us h2 {
+  color: white;
+}
+
+footer.footer .newsletter .form-element {
+  display: inline-block;
+}
+
+footer.foooter .newsletter .form-element .email-input input {
+  padding: 0.5rem 0.7rem;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  width: 74%;
+}
+
+footer.footer .newsletter .form-element span {
+  background: skyblue;
+  padding: 0.5rem 0.7rem;
+}
+
+footer.footer .facebook div > img {
+  display: inline-block;
+  width: 25%;
+  height: 50%;
+  margin: 0.3rem 0.4rem;
+}
+
+footer.footer .follow div i {
+  color: white;
+  padding: 0.4rem;
+}
+
+footer.footer .rights {
+  justify-content: center;
+}
+footer.footer .rights h4 a {
+  color: antiquewhite;
+}
+
+footer.footer .move-up {
+  position: absolute;
+  right: 6%;
+  top: 50%;
+}
+
+footer.footer .move-up span {
+  color: black;
+}
+
+footer.footer .move-up span:hover {
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1130px) {
+  .posts .post-content > .post-image .post-info {
+    left: 2rem !important;
+    bottom: 1.2rem !important;
+    border-radius: 0%;
+  }
+
+  .posts .sidebar .popular-post .post-info {
+    display: none !important;
+  }
+  footer.footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media only screen and (max-width: 750px) {
   .nav .nav-menu,
   .nav .nav-items {
@@ -273,5 +481,42 @@ main .post-info .post-title a {
 
   .nav .toggle-collapse {
     display: initial;
+  }
+
+  main .information {
+    grid-template-columns: 100%;
+  }
+
+  footer.footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  main.blog {
+    height: 125vh;
+  }
+
+  .information .post-content > .post-image .post-info {
+    display: none;
+  }
+  nav .toggle-collapse {
+    width: 80% !important;
+  }
+  footer.footer .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer.footer .container > div {
+    padding: 1rem 0.9rem;
+  }
+
+  footer.footer .rights {
+    padding: 0 1.4rem;
+    text-align: center;
+  }
+
+  nav .toggle-collapse {
+    width: 80% !important;
   }
 }

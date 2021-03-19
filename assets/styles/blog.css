@@ -1,0 +1,434 @@
+url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*.banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content h2 {
+  font-size: 5em;@import 
+  color: #ff0157;
+}
+
+.banner .content p {
+  font-size: 1em;
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header .logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+header .logo span {
+  color: #ff0157;
+}
+
+header .navigation {
+  position: relative;
+  display: flex;
+}
+
+header .navigation li {
+  list-style: none;
+  margin-left: 30px;
+  color: #ff0157;
+  transition: 0.6s;
+}
+
+header .navigation li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}
+
+header .navigation li a:hover {
+  color: #ff0157;
+}
+
+section {
+  padding: 100px;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row .co150 {
+  position: relative;
+  width: 48%;
+}*/
+
+.about_blog {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/photo-1514477917009-389c76a86b68.jpeg);
+  background-size: cover;
+}
+
+.contain-quote h1 {
+  font-size: 3em;
+  color: #ff0157;
+  font-family: "Indie Flower", cursive;
+}
+
+.contain-quote h3 {
+  font-size: 2em;
+  color: white;
+  font-family: "Pacifico", cursive;
+}
+
+.contain-quote hr {
+  color: #ff0157;
+}
+
+.contain-quote h5 {
+  font-size: 2em;
+  color: rgb(255, 192, 234);
+  justify-content: center;
+  font-family: "Merienda", cursive;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(../images/pinkpeachy.jpg);
+}
+
+.content h1 {
+  font-size: 5em;
+  color: #ff0157;
+  font-family: "Dancing Script", cursive;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h3 {
+  font-size: 3em;
+  font-family: "Caveat", cursive;
+  color: black;
+}
+
+html,
+body {
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 5rem;
+}
+
+h3 {
+  font-family: "Lobster", cursive;
+  font-size: 3rem;
+}
+
+.pop-title {
+  font-size: 3rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+span {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  margin: 0 5vw;
+}
+
+.text-gray {
+  color: black;
+}
+
+.logo .span {
+  color: #ff0157;
+}
+
+.nav {
+  background: rgba(255, 192, 203, 0.6);
+  padding: 0 2rem;
+  height: 0rem;
+  min-height: 10vh;
+  overflow: hidden;
+  transition: height 1s ease-in-out;
+  position: fixed;
+  width: 98%;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .nav-menu {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .toggle-collapse {
+  position: absolute;
+  top: 0%;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+  font-size: 1.4rem;
+  color: gray;
+}
+
+.collapse {
+  height: 30rem;
+}
+
+.nav .nav-items {
+  display: flex;
+  margin: 0;
+  font-family: "Redressed", cursive;
+  font-weight: bold;
+}
+
+.nav .nav-items .nav-link {
+  padding: 1.6rem 1rem;
+  font-size: 1.1rem;
+  position: relative;
+  color: black;
+}
+
+.nav .nav-items .nav-link:hover {
+  .nav .nav-items {
+    display: flex;
+    margin: 0;
+  }
+
+  .nav .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    color: black;
+  }
+
+  .nav .nav-items .nav-link:hover {
+    color: black;
+  }
+
+  .nav .nav-items .nav-link:hover a {
+    color: black;
+  }
+}
+
+.nav .nav-items .nav-link:hover a {
+  color: #ff0157;
+}
+
+.nav .nav-brand a {
+  font-size: 3rem;
+  padding: 1rem 0;
+  text-decoration: none;
+  display: block;
+  color: black;
+  font-family: "Lobster", cursive;
+}
+
+.nav .nav-brand span {
+  font-family: "Lobster", cursive;
+  color: #ff0157;
+  font-size: 3rem;
+}
+
+.nav .social {
+  padding: 1.4rem 0;
+}
+
+.nav .social i {
+  padding: 0.2rem;
+}
+
+.nav .social i:hover {
+  color: whitesmoke;
+}
+
+main .title {
+  background: url(../images/photo-1514477917009-389c76a86b68.jpeg);
+  width: 90%;
+  min-height: 100vh;
+  align-items: center;
+  background-size: cover;
+  transition: background-image 0.2s linear;
+  animation: changeBG 30s ease-in-out infinite;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes changeBG {
+  0% {
+    background-image: url("../images/rosegold.jpg");
+  }
+  20% {
+    background-image: url("../images/rosepink.jpg");
+  }
+  40% {
+    background-image: url("../images/pinky.jpg");
+  }
+  60% {
+    background-image: url("../images/pinky2.jpg");
+  }
+  80% {
+    background-image: url("../images/pinky3.jpg");
+  }
+  100% {
+    background-image: url("../images/pinky4.jpg");
+  }
+}
+
+main .title .title-background {
+  padding-top: 10rem;
+  text-align: center;
+  color: black;
+}
+
+main .title h1,
+h3 {
+  margin: 3rem;
+}
+
+main .information {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+ 
+
+.form-div {
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.creating_comments {
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.input-element {
+  width: 80%;
+  height: 1.9rem;
+  font-size: 1rem;
+  border-bottom: 1px solid #ff0157;
+}
+
+.sub-btn {
+  border-radius: 0;
+  padding: 0.8rem 32%;
+  margin: 1rem 0;
+  background: grey;
+}
+
+
+
+@media only screen and (max-width: 1130px) {
+  .posts .post-content > .post-image {
+    left: 2rem !important;
+    bottom: 1.2rem !important;
+    border-radius: 0%;
+  }
+
+  .posts .sidebar .popular-post .post-info {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .nav .nav-menu,
+  .nav .nav-items {
+    flex-direction: column;
+  }
+
+  .nav .toggle-collapse {
+    display: initial;
+  }
+
+  main .title {
+    grid-template-columns: 100%;
+  }
+
+  
+}
+
+@media only screen and (max-width: 520px) {
+  main.blog {
+    height: 125vh;
+  }
+
+  .title .information .post-content > .post-image .post-info {
+    display: none;
+  }
+
+  nav .toggle-collapse {
+    width: 80% !important;
+  }
+}

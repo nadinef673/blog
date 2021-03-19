@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="./styles/all.css" />
     <link rel="stylesheet" href="./styles/owl.carousel.min.css" />
     <link rel="stylesheet" href="./styles/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./styles/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Lobster&family=Redressed&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <nav class="nav">
       <div class="nav-menu flex-row">
         <div class="nav-brand">
-          <a href="#" class="text-gray">Blogger</a>
+          <a href="" class="logo">Twenty <span>21.</span></a>
         </div>
         <div class="toggle-collapse">
           <div class="toggle-icons">
@@ -24,37 +27,32 @@
         <div>
           <ul class="nav-items">
             <li class="nav-link">
-              <a href="#">HOME</a>
+              <a href="#home">HOME</a>
             </li>
             <li class="nav-link">
-              <a href="#">CATEGORY</a>
+              <a href="#about">ABOUT</a>
             </li>
             <li class="nav-link">
-              <a href="#">ARCHIVE</a>
+              <a href="#category">CATEGORY</a>
             </li>
             <li class="nav-link">
-              <a href="#">PAGES</a>
+              <a href="#contact">CONTACT US</a>
             </li>
             <li class="nav-link">
-              <a href="#">CONTACT US</a>
+              <a href="blog.html" target="*_black">BLOG</a>
             </li>
           </ul>
-        </div>
-        <div class="social text-gray">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#">Y</a>
         </div>
       </div>
     </nav>
 
     <main>
-      <section class="title">
-        <div class="title-background">
-          <h3>FOR THE QUEENS</h3>
-          <h1>Empowering Young Women Who Empower Young Women</h1>
-          <button class="btn">Explore</button>
+      <section class="title" id="home">
+        <div class="title-background" data-aos="fade-up" data-aos-delay="100">
+          <h1>FOR THE QUEENS</h3>
+          <h3>Empowering Young Women Who Empower Young Women</h1>
+          <button class="btn">
+            <a href="blog.html" target="*_black">Join The Conversation</a></button>
         </div>
       </section>
 
@@ -62,20 +60,28 @@
         <div class="blog">
           <div class="container">
             <div class="owl-carousel owl-theme blog-post">
-              <div class="blog-content">
+              <div
+                class="blog-content"
+                data-aos="fade-right"
+                data-aos-delay="200"
+              >
                 <img
                   src="images/healthy-eating-ingredients-1296x728-header.webp"
-                  alt="post-1"
+                  alt=""
                 />
                 <div class="blog-title">
-                  <h3>Healthy Foods Ideas</h3>
+                  <h3>Healthy Foods</h3>
                   <button class="btn-blog">
                     <a href="https://youtu.be/580e5vP-oO0">Watch Tutorial</a>
                   </button>
                   <span>13 Minutes</span>
                 </div>
               </div>
-              <div class="blog-content">
+              <div
+                class="blog-content"
+                data-aos="fade-right"
+                data-aos-delay="200"
+              >
                 <img src="images/clothing.webp" alt="post-2" />
                 <div class="blog-title">
                   <h3>Clothing Ideas</h3>
@@ -85,38 +91,38 @@
                   <span>13 Minutes</span>
                 </div>
               </div>
-              <div class="blog-content">
+              <div class="blog-content" data-aos="fade-right" data-aos="200">
                 <img src="../assets/images/makeup.jpeg" alt="" />
                 <div class="blog-title">
-                  <h3>Make-Up Tutorial</h3>
+                  <h3>Make-Up</h3>
                   <button class="btn-blog">
                     <a href="https://youtu.be/3DS5IC0Sj1g">Watch Tutorial</a>
                   </button>
                   <span>18 Minutes</span>
                 </div>
               </div>
-              <div class="blog-content">
-                <img src="../assets/images/hair.jpg" alt="post-1" />
+              <div class="blog-content" data-aos="fade-right" data-aos="200">
+                <img src="../assets/images/hair.jpg" alt="" />
                 <div class="blog-title">
-                  <h3>Hairstyles to Have</h3>
+                  <h3>Hairstyles</h3>
                   <button class="btn-blog">
                     <a href="https://youtu.be/rkUUIhQMmjU">Watch Tutorial</a>
                   </button>
                   <span>12 Minutes</span>
                 </div>
               </div>
-              <div class="blog-content">
-                <img src="images/skincare.webp" alt="post-1" />
+              <div class="blog-content" data-aos="fade-right" data-aos="200">
+                <img src="../assets/images/skincare.webp" alt="" />
                 <div class="blog-title">
-                  <h3>Perfect Skincare Products</h3>
+                  <h3>Skincare</h3>
                   <button class="btn-blog">
                     <a href="https://youtu.be/xN8ajZeNeRg">Watch Tutorial</a>
                   </button>
                   <span>10 Minutes</span>
                 </div>
               </div>
-              <div class="blog-content">
-                <img src="images/girlsnight.jpg" alt="post-1" />
+              <div class="blog-content" data-aos="fade-right" data-aos="200">
+                <img src="../assets/images/girlsnight.jpg" alt="" />
                 <div class="blog-title">
                   <h3>Girls Nights In</h3>
                   <button class="btn-blog">
@@ -138,19 +144,19 @@
         </div>
       </section>
 
-      <section class="container">
+      <section class="container" id="about">
         <div class="information">
           <div class="posts">
             <div class="post-content">
-              <div class="post-image">
+              <div class="post-image" data-aos="fade-up" data-aos-delay="200">
                 <div>
                   <img
-                    src="./images/starry-sky-night-purple-sky-twilight-wallpaper-preview.jpg"
+                    src="./images/helping-others-ws3.webp"
                     class="img"
                     alt="blog1"
                   />
                 </div>
-                <div class="post-info">
+                <div class="post-info" data-aos="fade-up" data-aos-delay="200">
                   <span><i class="fas fa-user text-gray"></i>&nbsp;Admin</span>
                   <span
                     ><i class="fas fa-calendar-alt text-gray"></i>&nbsp;March 4,
@@ -158,33 +164,32 @@
                   >
                 </div>
               </div>
-              <div class="post-title">
-                <a href="#">Why did I create this page?</a>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Cumque ducimus quaerat magnam inventore laudantium dolorem
-                  consequuntur eius beatae et ipsam, repudiandae, molestias,
-                  nulla obcaecati modi ab. Cum minus neque, doloribus eveniet
-                  delectus veniam tempore incidunt laborum similique quia saepe
-                  quam, quae libero sed, obcaecati corporis optio nesciunt odio
-                  nam ad?
-                </p>
-                <button class="post-btn">
-                  Read More &nbsp; <i class="fas fa-arrow-right"></i>
+              <div class="post-title" data-aos="fade-up" data-aos-delay="200">
+                <h1 class="pop-title">About this Blog</h1>
+                <h4>
+                  My name is Nadine Jodie Fortuin and I am a 24 year old
+                  student. In todays life with the generation as well as Technology that is constantly changing, things are definitely changing for the better, however, for some for the worse. For most Young Women, they grew up with mother figures which could tell them right from wrong while some females didn't have much of a mother figure around to show them the way. I created this Blog mainly for the females today who didn't get the life advices of some elderly figures or people who are to ashamed to admit they are struggling or who are to proud to ask for help. I know in today's life not just males, but females too are really quick to judge, hence the reason why the suicide rate for females are so high or having that fear leads them to either be depressed or have some mental health issues. That's why I have created this blog so that women from all over can interact with each other.
+                </h4>
+                <button
+                  class="post-btn"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                <a href="https://thegritandgraceproject.org/purpose/why-its-important-to-encourage-and-uplift-other-women" target="*_black">Read More &nbsp;</a><i class="fas fa-arrow-right"></i>
                 </button>
               </div>
             </div>
             <hr />
-            <div class="post-content">
-              <div class="post-image">
+            <div class="post-content" data-aos="fade-up" data-aos-delay="200">
+              <div class="post-image" data-aos="fade-up" data-aos-delay="200">
                 <div>
                   <img
-                    src="images/tumblr_mdob5cJ36L1rjtt2ho1_500.jpg"
+                    src="images/then&now.jpeg"
                     class="img"
                     alt="blog1"
                   />
                 </div>
-                <div class="post-info">
+                <div class="post-info" data-aos="fade-up" data-aos-delay="200">
                   <span><i class="fas fa-user text-gray"></i>&nbsp;Admin</span>
                   <span
                     ><i class="fas fa-calendar-alt text-gray"></i>&nbsp;March 4,
@@ -192,33 +197,31 @@
                   >
                 </div>
               </div>
-              <div class="post-title">
-                <a href="#">Why do we go through the things we go through</a>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Cumque ducimus quaerat magnam inventore laudantium dolorem
-                  consequuntur eius beatae et ipsam, repudiandae, molestias,
-                  nulla obcaecati modi ab. Cum minus neque, doloribus eveniet
-                  delectus veniam tempore incidunt laborum similique quia saepe
-                  quam, quae libero sed, obcaecati corporis optio nesciunt odio
-                  nam ad?
-                </p>
-                <button class="post-btn">
-                  Read More &nbsp; <i class="fas fa-arrow-right"></i>
+              <div class="post-title" data-aos="fade-up" data-aos-delay="200">
+                <h1 class="pop-title">Society then compared to now.</h1>
+                <h4>
+                  Growing up, I've always been accustomed to focusing on studies but also focusing on maintaining a balanced lifestyle between schol, chores, family and friends. Back then, I've experienced more skinned knees than broken hearts as compared to young teenagers these days who has had more heartbreaks than I had in one lifetime. Society then has totally changed compare to now. I think mostly that social media and public figures/influencers today plays a big role considering most of the kids today grow up with the mentality or feel as if they have the need to resemble their biggest role model with the fakest bodies and pretty faces. Back then, nobody really cared much about how they looked because back then, if you had brains to delegate and a personality/manner to make a room stop the moment you walk in, you had everything. 
+                </h4>
+                <button
+                  class="post-btn"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                ><a href="https://startsat60.com/media/opinion/bloggers/the-drastic-differences-between-todays-society-and-the-good-old-days" target="*_black">Read More &nbsp; </a>
+                  <i class="fas fa-arrow-right"></i>
                 </button>
               </div>
             </div>
             <hr />
-            <div class="post-content">
-              <div class="post-image">
+            <div class="post-content" data-aos="fade-up" data-aos-delay="200">
+              <div class="post-image" data-aos="fade-up" data-aos-delay="200">
                 <div>
                   <img
-                    src="./images/bright-star-in-a-pink-sky-wallpaper-preview.jpg"
+                    src="./images/nLOq0I.webp"
                     class="img"
                     alt="blog1"
                   />
                 </div>
-                <div class="post-info">
+                <div class="post-info" data-aos="fade-up" data-aos-delay="200">
                   <span><i class="fas fa-user text-gray"></i>&nbsp;Admin</span>
                   <span
                     ><i class="fas fa-calendar-alt text-gray"></i>&nbsp;March 4,
@@ -226,82 +229,72 @@
                   >
                 </div>
               </div>
-              <div class="post-title">
+              <div class="post-title" data-aos="fade-up" data-aos-delay="200">
                 <img src="" alt="" />
-                <a href="#">Women Empowering Other Women</a>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Cumque ducimus quaerat magnam inventore laudantium dolorem
-                  consequuntur eius beatae et ipsam, repudiandae, molestias,
-                  nulla obcaecati modi ab. Cum minus neque, doloribus eveniet
-                  delectus veniam tempore incidunt laborum similique quia saepe
-                  quam, quae libero sed, obcaecati corporis optio nesciunt odio
-                  nam ad?
-                </p>
-                <button class="post-btn">
-                  Read More &nbsp; <i class="fas fa-arrow-right"></i>
+                <h1 class="pop-title">My Female Inspiration: Oprah Winfrey</h1>
+                <h4>
+                  I might speak for many when I say that Oprah Winfrey is my role model considering her harsh upbringing. She is one of the most powerful woman around all thanks to her network which she has and also the horrible things she had to endure as a small girl/young adolescent. I guess the reason why she stands out most to me is because of despite how horrible your ubringing might've been, where you go and what you make of yourself is totally up to you as a person. In today's life, it isn't easy. For some it is, for some not but in the end, there is light at every tunnel. She has inspired many to do good and be good and she has inspired me a lot considering I don't have a squeaky clean past, but that doesn't matter at all considering I have an end goal to focus on. One of the greatest lessons learnt from her is that no matter how bad your past was, where you are headed in your future should be your main goal/focus. 
+                </h4>
+                <button class="post-btn"><a href="https://en.wikipedia.org/wiki/Oprah_Winfrey" target="*_black">Read More &nbsp; </a>
+                  <i class="fas fa-arrow-right"></i>
                 </button>
               </div>
             </div>
             <hr />
           </div>
-          <aside class="sidebar">
-            <div class="category">
+          <aside class="sidebar" id="category">
+            <div class="category" data-aos="fade-left" data-aos-delay="200">
               <h2>Category</h2>
               <ul class="category-list">
                 <li class="list-items">
-                  <a href="#">Clothing</a>
-                  <span>(05)</span>
+                  <a href="https://luxe.digital/lifestyle/style/best-women-shopping-websites/" target="*_black">Clothing</a>
+                  
                 </li>
                 <li class="list-items">
-                  <a href="#">Make-Up</a>
-                  <span>(05)</span>
+                  <a href="https://www.thetrendspotter.net/best-makeup-brands/" target="*_black">Make-Up</a>
+                  
                 </li>
                 <li class="list-items">
-                  <a href="#">Hair</a>
-                  <span>(05)</span>
+                  <a href="https://www.goodhousekeeping.com/beauty/hair/g28799272/best-hair-products/" target="*_black">Hair</a>
+                  
                 </li>
                 <li class="list-items">
-                  <a href="#">Skincare</a>
-                  <span>(05)</span>
+                  <a href="https://www.harpersbazaar.com/beauty/skin-care/g19738338/best-skin-care-brands/" target="*_black">Skincare</a>
+                  
                 </li>
                 <li class="list-items">
-                  <a href="#">Foods</a>
-                  <span>(05)</span>
+                  <a href="https://www.healthline.com/nutrition/50-super-healthy-foods" target="*_black">Foods</a>
                 </li>
                 <li class="list-items">
-                  <a href="#">Girls</a>
-                  <span>(05)</span>
+                  <a href="https://www.glamour.com/story/17-cheap-things-to-do-with-you" target="*_black">Girls</a>
                 </li>
               </ul>
             </div>
-            <div class="popular-post">
+            <div
+              class="popular-post"
+              data-aos="fade-left"
+              data-aos-delay="200"
+              id="archive"
+            >
               <h2>Popular Post</h2>
               <div class="post-info">
-                <a href="#">Why do we go through the things we go through</a>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Cumque ducimus quaerat magnam inventore laudantium dolorem
-                  consequuntur eius beatae et ipsam, repudiandae, molestias,
-                  nulla obcaecati modi ab. Cum minus neque, doloribus eveniet
-                  delectus veniam tempore incidunt laborum similique quia saepe
-                  quam, quae libero sed, obcaecati corporis optio nesciunt odio
-                  nam ad?
-                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ndZcH-Ze738" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h1 class="pop-title">Best Life Lessons</h1>
+                <h4>
+                  Over the years, things in society has totally changed since Social Media as well Television Shows came around. To most young adolescent females it is hard to communicate with elderly female figures close to them because they don't have any relationship with them or because sometimes we have this fear of being judged. I myself found myself in a situation like that but with the help of some great Women Entrepreneurs and public figures, I have overcome quite a few obstacles just by listening to their words of wisdom and they way they have managed to pick themselves up after stumbling.
+                </h4>
                 <button class="post-btn">
-                  <a href="https://www.independent.co.uk/topic/girls"
-                    >Read More &nbsp;</a
-                  >
+                  <a href="https://www.inc.com/lolly-daskal/24-of-the-most-powerful-life-lessons.html" target="*_black">Read More &nbsp;</a>
                 </button>
                 <div class="post-info">
-                  <a href="#">whwhwhwhwhwhwh</a>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Recusandae, rerum!
-                  </p>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/xp0O2vi8DX4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <h1 class="pop-title">What can we as Women do to break the cycle</h1>
+                  <h4>
+                    "Charity starts at home", was what I was always taught throughout the years by all the elderly female figures in my life as well teachers/motivational speakers. As a growing teen, I understood the concept a bit but as time went by and I grew from a young teenager to the young woman I am today, I have learnt that there is so much more to that and what they actually meant was that if I want things to change, it has to start within. Because in reality, if our minds aren't screwed on properly, we are going to constantly argue and fight for change. But the moment our heads are screwed on properly, not only are we going to change the world, but we are going to be role models for future generations to come. That's why I always say that change begins within us, not society.
+                  <h4>
                   <button class="post-btn">
                     <a
-                      href="https://www.nytimes.com/topic/subject/women-and-girls"
+                      href="https://www.unwomen.org/en/news/stories/2020/2/compilation-small-actions-big-impact-for-generation-equality" target="*_black"
                       >Read More</a
                     >
                   </button>
@@ -309,25 +302,106 @@
               </div>
             </div>
           </aside>
+          <div
+                  class="contact-form"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                  id="contact"
+                >
+                  <h2>Subscribe and stay updated!</h2>
+
+                  <form
+                    class="form-element"
+                    id="register-acc"
+                    onsubmit="event.preventDefault(), regAccount()"
+                  >
+                    <input
+                      class="input-element"
+                      type="text"
+                      id="fname"
+                      name="fname"
+                      placeholder="First Name"
+                    /><br />
+                    <input
+                      class="input-element"
+                      type="text"
+                      id="lname"
+                      name="lname"
+                      placeholder="Last Name"
+                    /><br />
+                    <input
+                      class="input-element"
+                      type="text"
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                    /><br /><br />
+                    <input class="sub-btn" type="submit" value="Submit" />
+                  </form>
+                </div>
         </div>
       </section>
-
-      <section class="contact-form">
-        <h2>Contact Us And We'll Get Back To You</h2>
-
-        <form id="register-acc" onsubmit="event.preventDefault(), regAccount()">
-          <label for="fname">First name:</label><br />
-          <input type="text" id="fname" name="fname" /><br />
-          <label for="lname">Last name:</label><br />
-          <input type="text" id="lname" name="lname" /><br />
-          <label for="email">Email:</label><br />
-          <input type="text" id="email" name="email" /><br /><br />
-          <input type="submit" value="Submit" />
-        </form>
-      </section>
     </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="about">
+          <h2>About Us</h2>
+          <p>
+            This is an online Blog for young women to communicate with each other without feeling judged or being judged
+          </p>
+        </div>
+        <div class="newsletter">
+          <h2>Newsletter</h2>
+          <p>Stay updated with our latest</p>
+          <div class="form-element">
+            <input class="email-input" type="text" placeholder="Email" /><span
+              ><i class="fas fa-chevron-right"></i
+            ></span>
+          </div>
+        </div>
+        <div class="facebook">
+          <h2>Facebook</h2>
+          <div class="flex-row">
+            <img src="./images/woman.jpeg" alt="" />
+            <img src="./images/Women-Empowerment-Essay-and-Speech.webp" alt="" />
+            <img src="./images/woman.jpeg" alt="" />
+          </div>
+          <div class="flex-row">
+            <img src="./images/Women-Empowerment-Essay-and-Speech.webp" alt="" />
+            <img src="./images/woman.jpeg" alt="" />
+            <img src="./images/Women-Empowerment-Essay-and-Speech.webp" alt="" />
+          </div>
+        </div>
+        <div class="follow">
+          <h2>Follow Us</h2>
+          <p>Follow and like us</p>
+          <div>
+            <a href="https://www.facebook.com/WomensMajorGroup/" target="*_black"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/promisingfilm?lang=en" target="*_black"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/makerswomen/?utm_source=ig_embed" target="*_black"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/playlist?list=PLIRf-bQmzKUXG931dbL_I9rFf4UShy1iT" target="*_black"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="rights flex-row">
+        <h4 class="text-gray">
+          Copyright 2019 All rights reserved | made By Nadine Jodie Fortuin
+          <a
+            href="https://www.facebook.com/profile.php?id=100009195920964"
+            target="*_black"
+            >Nadine Jodie Fortuin <i class="fab fa-facebook-f"></i
+          ></a>
+        </h4>
+      </div>
+      <div class="move-up">
+        <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+      </div>
+    </footer>
+
     <script src="scripts/jqueryv3.6.0.min.js"></script>
     <script src="scripts/owl.carousel.min.js"></script>
+    <script src="scripts/aos.js"></script>
 
     <script src="scripts/main.js"></script>
     <script src="index.js"></script>
